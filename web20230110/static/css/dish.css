@@ -1,0 +1,44 @@
+.dishCon{
+    width: 545px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(to right, #ffbb96, #ffd8bf);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 1%;
+    box-shadow: 5px 5px 10px #afafaf;
+    position: relative;
+}
+
+/* 菜的详细信息 */
+.dishCon .dishInfo{
+    width: 30%;
+    padding: 15px 0;
+}
+.dishCon .dishInfo p{
+    margin-bottom: 5px;
+}
+/* 菜的详细信息 end */
+
+/* 加菜 图标 */
+.dishCon .orderIcon{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 加菜的图标 end */
+
+/* 描述的容器 */
+.descriptionCon{
+    display: none;
+}
+.dishCon img:hover~[class="descriptionCon"],.descriptionCon:hover{
+    display: block;
+    position: absolute;
+    color: black;
+    background-color: white;
+    padding: 5px;
+}

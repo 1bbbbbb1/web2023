@@ -1,0 +1,149 @@
+.dishesManCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.dishesManCon h2 {
+    color: #ffbb96;
+    margin-bottom: 20px;
+}
+
+.dishesManCon table {
+    color: white;
+    border-radius: 55px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(146, 146, 146);
+}
+
+.dishesManCon table th {
+    padding: 10px;
+    background-color: #ffd8bf;
+}
+
+
+.dishesManCon table tr:nth-child(even) {
+    padding: 10px;
+    background-color: #ffbb96;
+}
+
+.dishesManCon table tr:nth-child(odd) {
+    padding: 10px;
+    background-color: #ffd8bf;
+}
+
+.dishesManCon table tr td {
+    text-align: center;
+    padding: 10px;
+}
+
+.dishesManCon table tr td:hover {
+    font-size: 20px;
+}
+
+.dishesManCon table tr td:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.dishesManCon #addDishManage {
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    height: 7%;
+    width: 50%;
+    background-color: #ffbb96;
+    border-radius: 10px;
+}
+
+.dishesManCon #addDishManage:hover {
+    margin-top: 20px;
+    color: white;
+    font-size: 22px;
+    width: 50%;
+    background-color: #ffd8bf;
+    border-radius: 10px;
+}
+
+
+.deleteDishBtnMan,
+.upDishBtnMan {
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.deleteDishBtnMan:hover,
+.upDishBtnMan:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.dishesManCon #overlay,
+.dishesManCon #overlayAdd {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.dishesManCon #popup,
+.dishesManCon #popupAdd {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.dishesManCon #popup #updateDishForm,
+.dishesManCon #popupAdd #addDishForm {
+    height: 200px;
+    width: 400px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    overflow-y: auto;
+}
+.dishesManCon #popup #updateDishForm input,
+.dishesManCon #popupAdd #addDishForm input{
+    border: 1px solid rgb(172, 170, 170);
+    margin: 10px 0;;
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.dishesManCon #popup #updateDishForm input:first-child,
+.dishesManCon #popupAdd #addDishForm input:first-child{
+    width: 95%;
+}
+
+.dishesManCon #popup #updateDishForm textarea,
+.dishesManCon #popupAdd #addDishForm textarea{
+    border: 1px solid rgb(172, 170, 170);
+    width: 95%;
+    margin-right: 5%;
+    height: 150px;
+}
+
+.dishesManCon #popup #closePopup-btn,
+.dishesManCon #popup #confirmPopup-btn,
+.dishesManCon #popupAdd #confirmPopup-btnAdd,
+.dishesManCon #popupAdd #closePopup-btnAdd {
+    color: white;
+    margin: 0 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #ffbb96;
+    border-radius: 10px;
+}

@@ -1,0 +1,78 @@
+.content .orderCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.orderCon #overlayUser {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.orderCon #popupUser {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 999;
+}
+
+.orderCon #closePopup-btnUser {
+    margin-top: 10px;
+}
+
+.orderCon #popupUser #closePopup-btnUser,.orderCon #popupUser #confirmPopup-btnUser{
+    margin: 0 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #ffd8bf;
+    border-radius: 10px;
+}
+
+
+.orderCon .dishesCon{
+    display: flex;
+    flex-wrap: wrap;
+}
+.orderCon .bottomCon{
+    display: flex;
+    flex-direction: column;
+}
+.bottomCon .recommendCon{
+    display: flex;
+    overflow-x: auto;
+}
+.recommendCon .dishCon{
+    flex-shrink: 0; /* 让子元素不缩小 */
+    white-space: nowrap; /* 让子元素不换行 */
+    margin-right: 10px; /* 添加右侧间距 */
+}
+
+.bottomCon .buyCon{
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color:#ffbb96;
+    box-shadow: 1px 1px 10px #a6a5a5;
+}
+.bottomCon button{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    background-color:#ffbb96;
+    padding: 5px 0;
+    width: 90%;
+}
+
+

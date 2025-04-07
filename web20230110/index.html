@@ -1,0 +1,477 @@
+<!--
+  This was created based on the Dribble shot by Deepak Yadav that you can find at https://goo.gl/XRALsw
+  I'm @hk95 on GitHub. Feel free to message me anytime.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/menu.css">
+    <link rel="stylesheet" href="./static/css/login.css">
+    <link rel="stylesheet" href="./static/css/router.css">
+    <link rel="stylesheet" href="./static/css/dish.css">
+    <link rel="stylesheet" href="./static/css/comment.css">
+    <link rel="stylesheet" href="./static/css/userCenter.css">
+    <link rel="stylesheet" href="./static/css/dishManage.css">
+    <link rel="stylesheet" href="./static/css/commentManage.css">
+    <link rel="stylesheet" href="./static/css/orderManage.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <!-- 登录之后 -->
+        <!-- <div class="afterLoginCon"> -->
+
+            <!-- 路由 -->
+            <!-- <div class="leftBar">
+                <div class="title">点餐系统</div>
+                <ul>
+                    <li class="slider">haha</li>
+                    <li><span>点单</span></li>
+                    <li><span>评论</span></li>
+                    <li><span>我的膳食情况</span></li>
+                </ul>
+            </div> -->
+
+            <!-- 管理端路由 -->
+            <!-- <div class="leftBar">
+                <div class="title">管理端</div>
+                <ul>
+                    <li>菜单管理</li>
+                    <li>评论管理</li>
+                    <li>订单管理</li>
+                </ul>
+            </div> -->
+
+
+            <!-- content -->
+            <!-- <div class="content"> -->
+
+                <!-- 管理端 管理评论 -->
+                <!-- <div class="commentsManCon">
+                    <h2>当前评价</h2>
+                    <table class="table">
+                        <colgroup>
+                            <col style="width:30%;">
+                            <col style="width:40%;">
+                            <col style="width:10%;">
+                            <col style="width:20%;">
+                        </colgroup>
+                        <th>用户</th>
+                        <th>内容</th>
+                        <th>最喜欢的菜品</th>
+                        <th>operations</th>
+
+
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>
+                                <div class="deleteCommentBtnMan">delete</div>    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>
+                                <div class="deleteCommentBtnMan">delete</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div> -->
+
+                <!-- 管理端 管理菜单 -->
+                <!-- <div class="dishesManCon">
+
+                    <div id="overlay">
+                        <div id="popup">
+                            <h2>这是一个弹窗</h2>
+                            <p>弹窗内容...</p>
+                            <button id="closePopup-btn">关闭</button>
+                        </div>
+                    </div>
+
+                    <table class="table">
+                        <colgroup>
+                            <col style="width:30%;">
+                            <col style="width:40%;">
+                            <col style="width:10%;">
+                            <col style="width:20%;">
+                        </colgroup>
+                        <th>菜名</th>
+                        <th>营养成分</th>
+                        <th>价格</th>
+                        <th>operations</th>
+
+
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td class="deleteDishManager">
+                                <div class="deleteDishBtnMan">delete</div>
+                                <div class="upDishBtnMan" id="open-btn">update</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                            <td class="deleteDishManager">
+                                <div class="deleteDishBtnMan">delete</div>
+                                <div class="upDishBtnMan">update</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div> -->
+
+                <!-- echarts -->
+                <!-- <div class="userCenterCon">
+                    <div class="tipsCon">
+                        <p class="tip1">您今日膳食符合膳食标准，真是太棒啦</p>
+                        <img src="./static/images/good.svg" alt="" srcset=""> 
+                         <p class="tip2">您今日膳食不太符合标准呢，可以尝试将烧鸡爪换成泡菜</p>
+                        <img src="./static/images/up.svg" alt="" srcset=""> 
+                    </div> 
+                    <div class="echartsCon">
+                        <div id="echart1"></div>
+                        <div id="echart2"></div>
+                    </div>
+                </div> -->
+
+                <!-- 反馈 -->
+                <!-- <div class="feedBackCon">
+                    <div class="nowDishes">
+                        <div class="dishCon">
+                            <img src="./static/images/1.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                        </div>
+                        <div class="dishCon">
+                            <img src="./static/images/1.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                        </div>
+                        <div class="dishCon">
+                            <img src="./static/images/1.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                        </div>
+                        <div class="dishCon">
+                            <img src="./static/images/1.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                        </div>
+                        <div class="dishCon">
+                            <img src="./static/images/1.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commentsCon">
+                        <h2>请填写一份小问卷</h2>
+                        <div class="bestLike">
+                            <h3>请选择您最喜欢的一道菜</h3>
+                            <input type="radio" name="bestLike" id="">红烧肉
+                            <input type="radio" name="bestLike" id="">红烧肉
+                            <input type="radio" name="bestLike" id="">红烧肉
+                        </div>
+                        <div class="comment">
+                            <h3>请给出您的评价</h3>
+                            <textarea name="" id="" cols="100" rows="7"></textarea>
+                        </div>
+                        <button class="feedBackBtn">提交</button>
+                    </div>
+                </div> -->
+
+                <!-- 点单 -->
+                <!-- <div class="orderCon">
+                    <div class="dishesCon">
+                        <div class="dishCon" data-no="1">
+                            <img src="./static/images/1.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                            <div class="orderIcon">
+                                <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                <span>0</span>
+                                <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                            </div>
+                            <div class="descriptionCon">
+                                <p>
+                                    我是美味的1
+                                </p>
+                                <p>
+                                    盐：100 蛋白质：40
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dishCon" data-no="2">
+                            <img src="./static/images/3.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                            <div class="orderIcon">
+                                <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                <span>0</span>
+                                <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                            </div>
+                            <div class="descriptionCon">
+                                <p>
+                                    我是美味的2
+                                </p>
+                                <p>
+                                    盐：100 蛋白质：40盐：100 蛋白质：40盐：100 蛋白质：40盐：100 蛋白质：40盐：100 蛋白质：40
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dishCon" data-no="3">
+                            <img src="./static/images/2.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                            <div class="orderIcon">
+                                <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                <span>0</span>
+                                <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                            </div>
+                            <div class="descriptionCon">
+                                <p>
+                                    我是美味的3
+                                </p>
+                                <p>
+                                    盐：100 蛋白质：40
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dishCon" data-no="4">
+                            <img src="./static/images/4.jpg" alt="菜" width="30%">
+                            <div class="dishInfo">
+                                <p>红烧肉</p>
+                                <p>食物种类：<span>肉类食品</span></p>
+                                <p>售价：<span>20</span>￥</p>
+                            </div>
+                            <div class="orderIcon">
+                                <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                <span>0</span>
+                                <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                            </div>
+                            <div class="descriptionCon">
+                                <p>
+                                    我是美味的4
+                                </p>
+                                <p>
+                                    盐：100 蛋白质：40
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomCon">
+                        <p>今日推荐菜品</p>
+                        <div class="recommendCon">
+                            <div class="dishCon" data-no="4">
+                                <img src="./static/images/4.jpg" alt="菜" width="30%">
+                                <div class="dishInfo">
+                                    <p>红烧肉</p>
+                                    <p>食物种类：<span>肉类食品</span></p>
+                                    <p>售价：<span>20</span>￥</p>
+                                </div>
+                                <div class="orderIcon">
+                                    <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                    <span>0</span>
+                                    <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                                </div>
+                                <div class="descriptionCon">
+                                    <p>
+                                        我是美味的4
+                                    </p>
+                                    <p>
+                                        盐：100 蛋白质：40
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="dishCon" data-no="4">
+                                <img src="./static/images/4.jpg" alt="菜" width="30%">
+                                <div class="dishInfo">
+                                    <p>红烧肉</p>
+                                    <p>食物种类：<span>肉类食品</span></p>
+                                    <p>售价：<span>20</span>￥</p>
+                                </div>
+                                <div class="orderIcon">
+                                    <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                    <span>0</span>
+                                    <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                                </div>
+                                <div class="descriptionCon">
+                                    <p>
+                                        我是美味的4
+                                    </p>
+                                    <p>
+                                        盐：100 蛋白质：40
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="dishCon" data-no="4">
+                                <img src="./static/images/4.jpg" alt="菜" width="30%">
+                                <div class="dishInfo">
+                                    <p>红烧肉</p>
+                                    <p>食物种类：<span>肉类食品</span></p>
+                                    <p>售价：<span>20</span>￥</p>
+                                </div>
+                                <div class="orderIcon">
+                                    <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                    <span>0</span>
+                                    <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                                </div>
+                                <div class="descriptionCon">
+                                    <p>
+                                        我是美味的4
+                                    </p>
+                                    <p>
+                                        盐：100 蛋白质：40
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="dishCon" data-no="4">
+                                <img src="./static/images/4.jpg" alt="菜" width="30%">
+                                <div class="dishInfo">
+                                    <p>红烧肉</p>
+                                    <p>食物种类：<span>肉类食品</span></p>
+                                    <p>售价：<span>20</span>￥</p>
+                                </div>
+                                <div class="orderIcon">
+                                    <img src="./static/images/delete.svg" alt="" width="34px" class="deleteDishIcon">
+                                    <span>0</span>
+                                    <img src="./static/images/add.svg" alt="" width="50px" class="addDishIcon">
+                                </div>
+                                <div class="descriptionCon">
+                                    <p>
+                                        我是美味的4
+                                    </p>
+                                    <p>
+                                        盐：100 蛋白质：40
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            
+                               
+                
+                        </div>
+                        <div class="buyCon">
+                            <img src=./static/images/buy.svg> <span>花费:0</span>
+                            <button id="orderBtn">下单</button>
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <!-- content end -->
+            <!-- </div> -->
+
+            <!-- 登录之后 end -->
+        <!-- </div> -->
+
+        <!-- <div class="loginContainer">
+
+        </div> -->
+
+
+        <!-- 登录 -->
+        <!-- <div class="loginContainer">
+            <div class="form-container sign-up-container">
+                <form action="#">
+                    <h1>创建账号</h1>
+                    <input type="text" placeholder="用户名" />
+                    <input type="password" placeholder="密码" />
+                    <button class="signUp">注册</button>
+                </form>
+            </div>
+            <div class="form-container sign-in-container">
+                <form action="#">
+                    <h1>登录</h1>
+                    <input type="text" placeholder="用户名" />
+                    <input type="password" placeholder="密码" />
+                    <a href="#">忘记密码</a>
+                    <button class="signIn">登录</button>
+                </form>
+            </div> 
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>欢迎回来</h1>
+                        <p>登录您的账号，让我们开始美食之旅！</p>
+                        <button class="ghost" id="signIn">登录</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1>Hello, Friend!</h1>
+                        <p>输入您的信息，加入我们这个大家庭吧！</p>
+                        <button class="ghost" id="signUp">注册</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+
+    <footer>
+        <p>
+            Created with <i class="fa fa-heart"></i> by
+            <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
+            - Read how I created this and how you can join the challenge
+            <a target="_blank" href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/">here</a>.
+        </p>
+    </footer>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.min.js"></script>
+    <script src="./src/js/commons.js"></script>
+    <script src="./src/js/setting.js"></script>
+    <script src="./src/js/data.js"></script>
+    <script src="./src/js/components/dish.js"></script>
+    <script src="./src/js/comment.js"></script>
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/router.js"></script>
+    <script src="./src/js/login.js"></script>
+    <script src="./src/js/userCenter.js"></script>
+    <script src="./src/js/dishManage.js"></script>
+    <script src="./src/js/commentManage.js"></script>
+    <script src="./src/js/orderManage.js"></script>
+    <script src="./src/js/final.js"></script>
+</body>
+
+</html>

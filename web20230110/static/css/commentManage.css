@@ -1,0 +1,58 @@
+.commentsManCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.commentsManCon h2{
+    color: #ffbb96;
+    margin-bottom: 20px;
+}
+
+.commentsManCon table {
+    color: white;
+    border-radius: 55px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(146, 146, 146);
+}
+
+.commentsManCon table th {
+    padding: 10px;
+    background-color: #ffd8bf;
+}
+
+.commentsManCon table tr:nth-child(even) {
+    padding: 10px;
+    background-color: #ffbb96;
+}
+
+.commentsManCon table tr:nth-child(odd) {
+    padding: 10px;
+    background-color: #ffd8bf;
+}
+
+.commentsManCon table tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+.commentsManCon table tr td:hover{
+    font-size: 20px;
+}
+
+.commentsManCon table tr td:last-child {
+    display: flex;
+    justify-content: center;
+}
+
+.deleteCommentBtnMan{
+    margin-right: 10px;
+    text-decoration: underline;
+}
+
+.deleteCommentBtnMan:hover{
+    color: black;
+    cursor: pointer;
+}

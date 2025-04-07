@@ -1,0 +1,43 @@
+.ordersManCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.ordersManCon h2{
+    color: #ffbb96;
+    margin-bottom: 20px;
+}
+
+.ordersManCon table {
+    color: white;
+    border-radius: 55px;
+    overflow: hidden;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgb(146, 146, 146);
+}
+
+.ordersManCon table th {
+    padding: 10px;
+    background-color: #ffd8bf;
+}
+
+.ordersManCon table tr:nth-child(even) {
+    padding: 10px;
+    background-color: #ffbb96;
+}
+
+.ordersManCon table tr:nth-child(odd) {
+    padding: 10px;
+    background-color: #ffd8bf;
+}
+
+.ordersManCon table tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+.ordersManCon table tr td:hover{
+    font-size: 20px;
+}

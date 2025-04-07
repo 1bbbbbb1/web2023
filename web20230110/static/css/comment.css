@@ -1,0 +1,46 @@
+.feedBackCon{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedBackCon .nowDishes{
+    width: 100%;
+    height: 35%;
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.feedBackCon .commentsCon{
+    box-shadow: 1px 1px 10px rgb(146, 146, 146);
+    color: white;
+    margin-top: 2%;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:#ffbb96;
+    border-radius: 10px;
+}
+.commentsCon .bestLike{
+    width: 100%;
+    height: 20%;
+    /* background-color: rgb(255, 255, 255); */
+}
+
+.commentsCon .comment{
+    height: 50%;
+    /* background-color: beige; */
+}
+
+.commentsCon .comment textarea{
+    font-size: 20px;
+    margin-top: 10px;
+     margin-left: 10px;
+}
+
+.commentsCon .feedBackBtn{
+    height: 10%;
+    background-color: white
+}
